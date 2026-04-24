@@ -1,10 +1,10 @@
 package com.example.spring_boot_practice;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
+@RestController
 public class HomeController {
 
     @GetMapping("/")
