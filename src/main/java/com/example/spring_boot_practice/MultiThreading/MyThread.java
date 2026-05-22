@@ -6,10 +6,7 @@ public class MyThread extends Thread {
     public void run(){
         try {
             System.out.println(" RUNNING : ");
-
             Thread.sleep(2000);
-
-
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

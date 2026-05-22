@@ -13,6 +13,9 @@ public class World extends Thread{
     public static void main(String[] args){
 
         World w1 = new World();
+        World2 w2 = new World2();
+        Thread thread1 = new Thread(w2);
+        thread1.start();
         w1.setDaemon(true);
         w1.start();
 
